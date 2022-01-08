@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome  -->
+
+    <script
+      src="https://kit.fontawesome.com/c637592d13.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- navbar area  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Megaplex</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="fab fa-servicestack"></i> Service</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="fas fa-address-card"></i> About us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="fas fa-book"></i> Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar area end  -->
+
+    <!-- Crousel  -->
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            src="./img/slider/bg1.jpg"
+            height="600"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div
+            class="carousel-caption d-none d-md-block bg-dark"
+            style="opacity: 0.6"
+          >
+            <h3 style="color: white; font-weight: bold">
+              How Big Can You Dream?
+            </h3>
+            <p style="color: white">We are here to make it happen</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="./img/slider/bg2.jpg"
+            height="600"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div
+            class="carousel-caption d-none d-md-block bg-dark"
+            style="opacity: 0.6"
+          >
+            <h3 style="color: white; font-weight: bold">
+              Need To Invent The Future!
+            </h3>
+            <p style="color: white">
+              We Making Difference To Great Things Possible
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./img/slider/bg3.jpg"
+            height="600"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div
+            class="carousel-caption d-none d-md-block bg-dark"
+            style="opacity: 0.6"
+          >
+            <h3 style="color: white; font-weight: bold">
+              Your Challenge is Our Progress
+            </h3>
+            <p style="color: white">So, You Don't Need to Go Anywhere Today</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- crousel end  -->
+
+    <!-- cards  -->
+    <div class="container">
+      <!-- First row -->
+      <div class="row">
+        <div class="col-md">
+          <div class="card">
+            <img
+              src="./img/27.jpg"
+              style="height: 200px"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <center>
+                <a href="#" class="btn btn-primary w-100"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <img
+              src="./img/31.jpg"
+              style="height: 200px"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <center>
+                <a href="#" class="btn btn-primary w-100"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <img
+              src="./img/111.jpg"
+              style="height: 200px"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <center>
+                <a href="#" class="btn btn-primary w-100"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- row-2 -->
+      <div class="row">
+        <div class="col-md">
+          <div class="card">
+            <img
+              src="./img/28.jpg"
+              style="height: 200px"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <center>
+                <a href="#" class="btn btn-primary w-100"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <img
+              src="./img/29.jpg"
+              style="height: 200px"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <center>
+                <a href="#" class="btn btn-primary w-100"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <img
+              src="./img/111.jpg"
+              style="height: 200px"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <center>
+                <a href="#" class="btn btn-primary w-100"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <!-- cards end -->
+
+    <!-- MAP  -->
+    <!--Google map-->
+    <div class="container">
+      <h2 style="text-align:center">Visit Us</h2><br><br>
+      <p style="text-align: center;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.3361031786826!2d67.06278341447938!3d24.95467694762183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340998d1487d1%3A0x2996b4fbbc22e48a!2sPlot%20R%2085%2C%20Sector%2015-A%2F1%20Sector%2015%20A%201%20Buffer%20Zone%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1594650920819!5m2!1sen!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="w-100"></iframe></p>
+    </div><br><br>
+
+    <!--Google Maps-->
+    <!-- Map end  -->
+
+    <!-- footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright: SHAGHIL
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- footer end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

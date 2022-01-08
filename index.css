@@ -1,0 +1,19 @@
+@media screen and (max-width: 767px) {
+    .row .col-md{
+        margin-top: 60px;
+    } 
+}
+@media screen and (min-width: 768px) {
+    .row{
+        margin-top: 60px;
+    } 
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+iframe{
+    display: block;
+    height: 60vh;
+}
